@@ -208,7 +208,11 @@
                     @include('partials.endingredes')
 
                 </div>
-                        
+                
+
+                <div>
+                    <!-- hola -->
+                <div>   
                 <div id="certificados" class="content-section hidden">
                     <div class="flex items-center justify-between pb-4 px-10">
                         <h1 class="text-xs md:text-sm lg:text-lg xl:text-2xl">Certificados</h1>
