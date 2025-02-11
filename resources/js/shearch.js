@@ -33,4 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             counter.textContent = `${visibleRows} de ${totalRows}`;
         }
     }
+
+    // Exponer la función updateResultCounter globalmente
+    window.updateResultCounter = updateResultCounter;
 });

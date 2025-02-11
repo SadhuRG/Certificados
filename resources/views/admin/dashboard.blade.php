@@ -207,12 +207,8 @@
 
                     @include('partials.endingredes')
 
-                </div>
+                </div>  
                 
-
-                <div>
-                    <!-- hola -->
-                <div>   
                 <div id="certificados" class="content-section hidden">
                     <div class="flex items-center justify-between pb-4 px-10">
                         <h1 class="text-xs md:text-sm lg:text-lg xl:text-2xl">Certificados</h1>
@@ -245,6 +241,13 @@
                                     </div>
 
                                     <div class="flex items-center gap-4">
+                                        <button id="deleteMultiple" 
+                                                class="px-4 py-1.5 mb-4 flex items-center justify-center bg-white hover:bg-[#E7C9EE] text-[#9636AD] font-semibold rounded-lg shadow-md transition-all duration-200 transform hover:scale-105 border-[#9636AD] border-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                                                disabled>
+                                            <img src="/imagenes/icons/supertrash.svg" alt="Search Icon" class="w-6 h-6 mr-2">
+                                            <span class="text-center text-xs lg:text-sm">Borrar</span>
+                                        </button>
+
                                         <a href="{{ route('login') }}" 
                                             class="px-4 py-1.5 mb-4 flex items-center justify-center bg-white hover:bg-[#E7C9EE] text-[#9636AD] font-semibold rounded-lg shadow-md transition-all duration-200 transform hover:scale-105 border-[#9636AD] border-2">
                                             <img src="/imagenes/icons/plus.svg" alt="Search Icon" class="w-4 h-4 mr-2">

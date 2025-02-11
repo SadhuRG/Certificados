@@ -146,9 +146,12 @@ class AdminController extends Controller
         // Obtener los certificados de la sesión
         $certificados = collect(session('certificados'));
         
-        // Eliminar el certificado
-        $certificados = $certificados->filter(function ($certificado) use ($id) {
-            return $certificado['id'] != $id;
+        // Convertir $id a array si es un string
+        $ids = is_array($id) ? $id : [$id];
+        
+        // Eliminar los certificados
+        $certificados = $certificados->filter(function ($certificado) use ($ids) {
+            return !in_array($certificado['id'], $ids);
         })->values();
         
         // Actualizar la sesión

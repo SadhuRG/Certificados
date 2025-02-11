@@ -12,6 +12,7 @@ export default defineConfig({
                 'resources/js/paginacion.js',
                 'resources/js/shearch.js',
                 'resources/js/borrar.js',
+                'resources/js/multipledelete.js',
                 'resources/js/app.js',
             ],
             refresh: true,
